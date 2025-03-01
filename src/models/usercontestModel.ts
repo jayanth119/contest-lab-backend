@@ -53,6 +53,21 @@ const userContestSchema = new Schema({
     type: Boolean,
     default: false,
   },
+  isScore :{
+    type: Boolean,
+    default: false,
+  },
+  totalScore: {
+    type: Number,
+    default: 0,
+  },
+  startTime: {
+    type: Date,
+    default: Date.now,
+  },
+  endTime: {
+    type: Date,
+  },
 });
 
 // Helper function to execute code
